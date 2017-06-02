@@ -1,0 +1,5 @@
+스칼라 - 타입 추론가능
+val msg = "hi"
+rst : msg : String = hi
+
+이클립스 마켓플레이스에서 스칼라 ide 플러그인 설치 가능 
