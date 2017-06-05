@@ -3,3 +3,17 @@ val msg = "hi"
 rst : msg : String = hi
 
 이클립스 마켓플레이스에서 스칼라 ide 플러그인 설치 가능 
+
+
+def main(args: Array[String]): Unit = {
+    
+  }
+
+java의 메인 함수처럼 사용됨
+object main extends App{
+  print("app main")
+}
+이렇게 App를 extends 하여 사용 가능
+
+var : 재할당 가능한 변수
+val : final로 보면 된다.`
