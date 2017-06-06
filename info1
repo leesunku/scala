@@ -17,3 +17,21 @@ object main extends App{
 
 var : 재할당 가능한 변수
 val : final로 보면 된다.`
+
+
+스칼라 변수 스코프는 자바와 다른 한가지, 내부 스코프 변수명을 상위 변수명으로 제정의 해도 된다는 점
+
+스칼라는 특별한 형태의 함수가 있다.
+- repeated parameter 반복 파라메터
+ex
+  def printAll( args : String*) = for (arg <- args) println(arg)
+  printAll("lee", "sun", "ku")
+  printAll("sun", "ku")
+
+- named agument 이름 붙힌 인자
+- 함수에 파라메터를 넘길 때, 순서대로 보내도 되지만, 이름을 명시하여 보내면 함수 아큐먼트와 맵핑됨
+ex
+  def sumStr(x :String, y:String) = x+y
+  println(sumStr("lee","sk"))
+  println(sumStr(x ="lee", y ="sk"))
+  println(sumStr(y ="lee", x ="sk"))
